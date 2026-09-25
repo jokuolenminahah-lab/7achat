@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>7a Chat</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <div>
+        <h1>7a Chat</h1>
+        <p>Chat with your class in realtime</p>
+      </div>
+      <div id="status" class="status offline">Connecting…</div>
+    </header>
+
+    <section class="name-card">
+      <label for="name">Your name</label>
+      <input id="name" maxlength="30" placeholder="Choose your name" autocomplete="nickname">
+    </section>
+
+    <section id="messages" class="messages" aria-live="polite"></section>
+
+    <form id="chatForm" class="composer">
+      <input
+        id="message"
+        maxlength="500"
+        placeholder="Type a message and press Enter…"
+        autocomplete="off"
+        disabled
+      >
+      <button id="send" type="submit" disabled>Send</button>
+    </form>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
