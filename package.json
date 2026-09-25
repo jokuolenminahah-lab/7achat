@@ -1,0 +1,13 @@
+{
+  "name": "7a-chat",
+  "version": "1.0.0",
+  "private": true,
+  "description": "7a Chat - simple realtime class chat",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "ws": "^8.18.0"
+  }
+}
